@@ -9,7 +9,7 @@ import os
 class Scream(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        path = os.join(os.dirname(__file__),'screams')
+        path = os.path.join(os.path.dirname(__file__),'screams')
         self.playlist = []
         for roots, dirs, files in os.walk(path):
             for file in files:
