@@ -1,5 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
-from mycroft.audioservice import AudioService
+from mycroft.skills.audioservice import AudioService
 from mycroft.audio import wait_while_speaking
 import random
 from os.path import dirname, join, walk
