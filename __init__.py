@@ -3,13 +3,14 @@ from mycroft.skills.audioservice import AudioService
 from mycroft.audio import wait_while_speaking
 import random
 import os
+from os.path import dirname,join
 
 
 
 class Scream(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        path = os.path.join(os.path.dirname(__file__),'screams')
+        path = join(dirname(__file__),'screams')
         self.playlist = []
         for roots, dirs, files in os.walk(path):
             for file in files:
